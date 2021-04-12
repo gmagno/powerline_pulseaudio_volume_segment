@@ -15,7 +15,10 @@ def current_volume(pl, format="墳 {0:2.0f}%"):
         {
             "contents": format.format(vol_pct),
             "gradient_level": vol_pct,
-            "highlight_groups": ["mem_usage_gradient", "mem_usage"],
+            "highlight_groups": [
+                "pulse_audio_volume_gradient",
+                "pulse_audio_volume",
+            ],
             "divider_highlight_group": "background:divider",
         }
     ]
